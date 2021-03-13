@@ -1,0 +1,153 @@
+body {
+  color: #333;
+  text-align: center;
+  font-size: 14px;
+  font-family: -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell,
+    Noto Sans, sans-serif, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", Arial;
+  background-color: #f1f1f1;
+}
+.todo {
+  position: relative;
+  margin: 50px auto 10px;
+  width: 450px;
+}
+.todo-header{
+  /* position: relative; */
+}
+h1{
+  color: #e96900;
+  font-size: 32px;
+  font-weight: normal;
+  font-style: italic;
+}
+.main {
+  margin: 0 auto;
+  padding: 20px;
+  /* width: 300px; */
+  background-color: #fff;
+}
+.bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box{
+  padding: 10px 10px 10px 0;
+  width: 120px;
+  text-align: left;
+}
+.input{
+  flex: 1;
+}
+.input, .edit {
+  padding: 0 10px;
+  height: 40px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+input:focus {
+  border: 1px solid#eee;
+  outline: none;
+}
+.edit{
+  width: 388px;
+}
+a:link, a:hover, a:active, a:visited{
+  color: #eee;
+}
+.footer{
+  margin: 0 auto;
+  padding: 0 10px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.todo-count{
+  color: #999;
+}
+.todo-count span{
+  margin-left: 5px;
+}
+.ul {
+  /* display: inline-block; */
+}
+.ul > li {
+  display: inline-block;
+  margin: 0;
+}
+.ul > li > a {
+  padding: 3px 8px;
+  color: #999;
+  text-decoration: none;
+}
+.ul > li > a.selected{
+  border-radius: 3px;
+  border: 1px solid #eee;
+}
+.button {
+  color: #999;
+  border: none;
+  background-color: #fff;
+  visibility: none;
+}
+.todo-list {
+  margin-top: 10px;
+  clear: both;
+}
+.clearfix:before{
+  content:" ";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden
+}
+.todo-list li{
+  margin-top: 10px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  line-height: 40px;
+  list-style: none;
+}
+.view{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.view label{
+  padding-left: 10px;
+  flex: 1;
+  text-align: left;
+}
+.editing .view{
+  display: none;
+}
+.edit{
+  display: none;
+}
+.editing .edit{
+  display: block;
+}
+input[type='checkbox'] {
+  /* appearance: none; */
+  /* 可以隐藏当前checkbox，位置还是在原位置，可覆盖在自定义checkbox的盒子之上 */
+}
+.destroy{
+  padding: 0 10px;
+  font-size: 16px;
+  color: #999;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: none;
+}
+.view:hover .destroy{
+  display: block;
+}
